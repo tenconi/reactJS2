@@ -15,7 +15,8 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
-import {CartWidget} from '../navBar/CartWidget/CartWidget'
+import {CartWidget} from '../navBar/CartWidget/CartWidget';
+import ItemListContainer from '../navBar/ItemListContainer/ItemListContainer'
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -82,7 +83,7 @@ export default function NavBar() {
   };
 
   const menuId = 'primary-search-account-menu';
-  const renderMenu = (
+  const renderMenu = (    
     <Menu
       anchorEl={anchorEl}
       anchorOrigin={{
@@ -153,10 +154,13 @@ export default function NavBar() {
         <p>Profile</p>
       </MenuItem>
     </Menu>
+
+    
   );
 
   return (
     <Box sx={{ flexGrow: 1 }}>
+      <ItemListContainer name="Daniel"/>
       <AppBar position="static">
         <Toolbar>
           <IconButton
@@ -233,7 +237,8 @@ export default function NavBar() {
         </Toolbar>
       </AppBar>
       {renderMobileMenu}
-      {renderMenu}
+      {renderMenu}      
     </Box>
+    
   );
 }

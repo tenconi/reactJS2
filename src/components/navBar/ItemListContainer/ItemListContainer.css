@@ -1,0 +1,31 @@
+.list{
+    background:#333;
+    color:#fff;
+    height: 20px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list p{
+    font-size: 10px;
+    width: 80%;
+    text-align: right;
+    letter-spacing: 0.5px;
+}
+
+.list p > strong{
+    animation: shine 2s infinite;
+}
+@keyframes shine {
+    0%{
+        color:white;
+    }
+    50%{
+        color:gold;
+    }
+    100%{
+        color:white;
+    }
+    
+}
