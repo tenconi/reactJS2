@@ -1,11 +1,15 @@
 import './App.css';
-import NavBar from './components/navBar/NavBar.jsx'
+import Catalogo from './components/catalogo/catalogo';
+import NavBar from './components/navBar/NavBar.jsx';
+
 
 function App() {
   return (
     <div className="App">
       <NavBar/>
-      <p>asdasd</p>
+      <Catalogo/>  
+      
+
     </div>
   );
 }
