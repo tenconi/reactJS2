@@ -1,0 +1,14 @@
+.Card{
+    width: 250px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+}
+.cardImg{
+    overflow: hidden;
+    height: 150px;
+    object-fit:cover;
+}
+.cardImg img{
+    min-height: 100%;
+}

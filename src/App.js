@@ -1,5 +1,6 @@
+import {Cards} from '../src/components/Cards/Cards.js';
 import './App.css';
-import Catalogo from './components/catalogo/catalogo';
+import Clickeable from './components/catalogo/Clickeable/Clickeable.jsx';
 import NavBar from './components/navBar/NavBar.jsx';
 
 
@@ -7,9 +8,9 @@ function App() {
   return (
     <div className="App">
       <NavBar/>
-      <Catalogo/>  
+      <Cards/>
       
-
+      <Clickeable/>
     </div>
   );
 }
